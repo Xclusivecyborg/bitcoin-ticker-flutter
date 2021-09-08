@@ -20,7 +20,7 @@ class MyCoinData {
   DateTime time;
   String assetIdBase;
   String assetIdQuote;
-  double rate;
+  var rate;
 
   factory MyCoinData.fromJson(Map<String, dynamic> json) => MyCoinData(
         time: DateTime.parse(json["time"]),
